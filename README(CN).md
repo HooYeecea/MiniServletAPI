@@ -6,6 +6,8 @@ MiniSpring 学习栈共用的 Servlet / HTTP 契约层。
 
 **仓库：** [https://github.com/HooYeecea/MiniServletAPI](https://github.com/HooYeecea/MiniServletAPI)
 
+同时是父工程 [MiniSpring](../README(CN).md) 中的一个模块。
+
 ## 为什么要单独抽模块
 
 `MiniTomcat`（BIO）和 `MiniTomcatNIO` 是两套不同的连接器 / 容器实现。
@@ -24,19 +26,27 @@ Maven 坐标：`com.minitomcat:mini-servlet-api`
 
 ## 谁在用
 
-| 项目 | 角色 | 仓库 |
-|------|------|------|
-| [MiniTomcat](https://github.com/HooYeecea/MiniTomcat) | BIO 迷你 HTTP 服务器，实现本 API | `HooYeecea/MiniTomcat` |
-| [MiniTomcatNIO](https://github.com/HooYeecea/MiniTomcatNIO) | NIO 迷你 Tomcat，实现本 API | `HooYeecea/MiniTomcatNIO` |
-| MiniMVC | 后续 SpringMVC 风格层；只依赖本 API，不绑死某个 Tomcat | （本地 / 待建仓） |
+| 项目 | 角色 |
+|------|------|
+| [MiniTomcat](../MiniTomcat/) | BIO 迷你 HTTP 服务器，实现本 API |
+| [MiniTomcatNIO](../MiniTomcatNIO/) | NIO 迷你 Tomcat，实现本 API |
+| [MiniMVC](../MiniMVC/) | SpringMVC 风格层；只依赖本 API，不绑死某个 Tomcat |
 
 ## 构建
+
+父工程：
+
+```bash
+mvn -pl MiniServletApi clean install
+```
+
+或在本模块目录：
 
 ```bash
 mvn clean install
 ```
 
-父工程 `mini-spring` 下的其它模块可依赖：
+其它模块依赖：
 
 ```xml
 <dependency>

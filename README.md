@@ -6,6 +6,8 @@ Chinese version: [README(CN).md](README(CN).md)
 
 **Repository:** [https://github.com/HooYeecea/MiniServletAPI](https://github.com/HooYeecea/MiniServletAPI)
 
+Also a module of the parent [MiniSpring](../README.md) reactor.
+
 ## Why this module exists
 
 `MiniTomcat` (BIO) and `MiniTomcatNIO` are two different connectors / containers.
@@ -24,19 +26,27 @@ Implementations stay in each server project. MVC and app code depend on this API
 
 ## Consumers
 
-| Project | Role | Repository |
-|---------|------|------------|
-| [MiniTomcat](https://github.com/HooYeecea/MiniTomcat) | BIO mini HTTP server; implements the API | `HooYeecea/MiniTomcat` |
-| [MiniTomcatNIO](https://github.com/HooYeecea/MiniTomcatNIO) | NIO mini Tomcat; implements the API | `HooYeecea/MiniTomcatNIO` |
-| MiniMVC | Future SpringMVC-style layer; depends on the API, not a specific Tomcat | (local / upcoming) |
+| Project | Role |
+|---------|------|
+| [MiniTomcat](../MiniTomcat/) | BIO mini HTTP server; implements the API |
+| [MiniTomcatNIO](../MiniTomcatNIO/) | NIO mini Tomcat; implements the API |
+| [MiniMVC](../MiniMVC/) | SpringMVC-style layer; depends on the API, not a specific Tomcat |
 
 ## Build
+
+From the parent reactor:
+
+```bash
+mvn -pl MiniServletApi clean install
+```
+
+Or inside this module:
 
 ```bash
 mvn clean install
 ```
 
-Other modules in the parent `mini-spring` reactor can then depend on:
+Other modules depend on:
 
 ```xml
 <dependency>
