@@ -17,7 +17,7 @@ MiniSpring 学习栈共用的 Servlet / HTTP 契约层。
 - `HttpRequest`、`HttpResponse`
 - `ServletConfig`、`RequestDispatcher`、`HttpSession`、`DispatcherType`
 
-包名：`com.minispring.web`  
+包名：`com.web`  
 Maven 坐标：`com.minitomcat:mini-servlet-api`
 
 具体实现留在各自服务器工程里。MVC 和应用代码只依赖本 API。
@@ -49,7 +49,7 @@ mvn clean install
 ## 目录结构
 
 ```text
-com.minispring.web
+com.web
 ├── Servlet
 ├── Filter
 ├── FilterChain

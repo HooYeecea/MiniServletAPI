@@ -1,4 +1,4 @@
-package com.minispring.web;
+package com.web;
 
 /**
  * Server-side session attribute store.

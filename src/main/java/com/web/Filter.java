@@ -1,4 +1,4 @@
-package com.minispring.web;
+package com.web;
 
 /**
  * Application filter. Must call {@code chain.doFilter} to continue.

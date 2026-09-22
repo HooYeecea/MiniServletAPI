@@ -1,4 +1,4 @@
-package com.minispring.web;
+package com.web;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;

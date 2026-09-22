@@ -1,4 +1,4 @@
-package com.minispring.web;
+package com.web;
 
 /**
  * Remaining filter chain, ending at the target Servlet.

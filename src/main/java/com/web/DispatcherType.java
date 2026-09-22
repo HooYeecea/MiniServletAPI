@@ -1,4 +1,4 @@
-package com.minispring.web;
+package com.web;
 
 /**
  * Dispatcher type used when matching filters.

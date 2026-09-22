@@ -17,7 +17,7 @@ This module holds only the **application-facing API**:
 - `HttpRequest`, `HttpResponse`
 - `ServletConfig`, `RequestDispatcher`, `HttpSession`, `DispatcherType`
 
-Package: `com.minispring.web`  
+Package: `com.web`  
 Maven artifact: `com.minitomcat:mini-servlet-api`
 
 Implementations stay in each server project. MVC and app code depend on this API only.
@@ -49,7 +49,7 @@ Other modules in the parent `mini-spring` reactor can then depend on:
 ## Layout
 
 ```text
-com.minispring.web
+com.web
 ├── Servlet
 ├── Filter
 ├── FilterChain

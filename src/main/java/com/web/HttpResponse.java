@@ -1,4 +1,4 @@
-package com.minispring.web;
+package com.web;
 
 /**
  * Application-facing HTTP response contract.

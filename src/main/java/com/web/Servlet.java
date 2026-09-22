@@ -1,4 +1,4 @@
-package com.minispring.web;
+package com.web;
 
 /**
  * Minimal Servlet contract shared by MiniTomcat / MiniTomcatNIO / MiniMVC.
